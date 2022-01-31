@@ -1,0 +1,25 @@
+body{
+  @extend %opensans-400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.container{
+  padding: 0 165px;
+}
+.button{
+  @extend %opensans-700;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 14px 18px;
+  background-color: $accent;
+  color: #fff;
+}
+.title{
+  @extend %tinos-400;
+  font-size: 54px;
+  line-height: 62px;
+  color: $title;
+  span{
+    color: #000;
+  }
+}
