@@ -8,7 +8,7 @@ $text: #656363;
   font-weight: 700;
 }
 %opensans-italic{
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: 'OpenSans-italic', sans-serif;
   font-weight: 400;
 }
 %opensans-400{
@@ -18,4 +18,12 @@ $text: #656363;
 %tinos-400{
   font-family: 'Tinos-Regular', sans-serif;
   font-weight: 400;
+}
+%cookie-400{
+  font-family: 'Cookie-Regular', sans-serif;
+  font-weight: 400;
+}
+%opensans-600{
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-weight: 600;
 }
