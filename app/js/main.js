@@ -1,5 +1,9 @@
 $(function(){
 
+  $('.header__menu-btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
   $('.our-cooks__slider').slick({
     infinite: true,
     slidesToShow: 3,

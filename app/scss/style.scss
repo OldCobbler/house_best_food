@@ -10,6 +10,11 @@
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  &__content-title{
+    span{
+      color: $title;
+    }
+  }
   &__top{
     display: flex;
     align-items: center;
@@ -105,6 +110,40 @@
   }
   &__content-button{
     text-align: center;
+  }
+  &__menu-btn{
+    width: 30px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 8px;
+    cursor: pointer;
+    display: none;
+    span{
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $accent;
+      border-radius: 2px;
+      position: relative;
+      &::before,
+      &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: $accent;
+        border-radius: 2px;
+      }
+      &::before{
+        top: 5px;
+      }
+      &::after{
+        top: -5px;
+      }
+    }
   }
 }
 
@@ -217,13 +256,14 @@
     text-align: center;
     margin-bottom: 140px;
   }
-  &__content{
-    display: flex;
-  }
   &__slider{
-   max-width: 635px; 
-   width: 100%;
+  /*  max-width: 635px; */ 
+   min-width: 100%;
    display: flex;
+  }
+  &__slider-min-box{
+    display: flex;
+    width: 100%;
   }
   &__slider-min-item{
     width: 160px;
@@ -258,26 +298,21 @@
     border: none;
   }
   &__price{
-    max-width: 523px;
     width: 100%;
   }
   &__price-item{
-    max-width: 523px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 30px;
-    margin-left: 30px;
-    padding-top: 50px;
-    height: 140px;
+    padding: 50px 10px 0 30px;
     @extend %tinos-400;
     font-size: 26px;
     line-height: 29px;
+    height: 140px;
     span{
       position: relative;
       top: 15px;
-      max-width: 260px;
-      width: 100%;
+      width: 50%;
       height: 1px;
       border-bottom: 2px dashed #000;
     }

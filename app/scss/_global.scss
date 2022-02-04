@@ -7,12 +7,34 @@ body{
   padding: 0 165px;
 }
 .button{
+  display: inline-block;
   @extend %opensans-700;
   font-size: 14px;
   line-height: 19px;
   padding: 14px 18px;
   background-color: $accent;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+  
+  &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 157px;
+      width: 60px;
+      height: 47px;
+      opacity: 0.9;
+      background-image: linear-gradient(45deg, #ff7400,#fff,#ff7400);
+    }
+    &:hover{
+    transition: all 0.3s;
+    transform: perspective(400px) rotateY(30deg);
+    &::after{
+      left: -157px;
+      transition: all 0.9s;
+    }
+  }
 }
 .title{
   @extend %tinos-400;

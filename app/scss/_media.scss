@@ -1,0 +1,165 @@
+@media(max-width: 1200px){
+  .header{
+    &__top{
+      position: relative;
+    }
+    .menu{
+      &__list{
+        width: 100%;
+        position: absolute;
+        top: -200px;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s;
+      }
+      &__list--active{
+        top: 150px;
+      }
+      &__list-item + .menu__list-item{
+      margin-left: 0;
+      }
+      &__list-item{
+        width: 100%;
+        border-bottom: 1px solid $accent;
+      }
+      &__list-link{
+        width: 100%;
+        display: block;
+        padding: 10px 0 10px;
+      }
+    }
+    &__menu-btn{
+      display: block;
+    }
+  }
+  .offer{
+    height: 100%;
+    &__inner{
+      flex-direction: column;
+    }
+  }
+  .dishes{
+    &__slider{
+      flex-direction: column;
+    }
+    &__slider-big{
+      margin: 0 0 45px 0;
+      
+    }
+    &__slider-min-box{
+      display: flex;
+    }
+  }
+  .dishes__slider-big .slick-list {
+    width: 100%;
+  }
+}
+
+
+@media(max-width: 960px){
+  .header{
+    &__contacts,
+    &__button,
+    &__cart-link{
+      display: none;
+    }
+  }
+  .container{
+    padding: 0 15px;
+  }
+  .value{
+    &__list{
+      flex-direction: column;
+    }
+    &__item{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__item + .value__item{
+      margin-left: 0;
+    }
+  }
+}
+@media(max-width: 720px){
+  .title{
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .value{
+    &__history{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__history-text-item{
+      margin-bottom: 22px;
+    }
+  }
+}
+@media(max-width: 600px){
+  .header{
+    &__logo{
+      svg{
+        display: block;
+        width: 42px;
+      }
+    }
+    &__content{
+      max-width: 100%;
+    }
+    &__content-title{
+      text-align: center;
+      font-size: 40px;
+      line-height: 46px;
+      span{
+        font-size: 30px;
+        line-height: 34px;
+      }
+    }
+    &__content-subtitle{
+      font-size: 15px;
+      line-height: 20px;
+      &::before,
+      &::after{
+        display: none;
+      }
+    }
+  }
+  .dishes{
+    &__price-item{
+      font-size: 22px;
+      line-height: 25px;
+      height: 115px;
+      padding: 40px 10px 0 10px;
+      span{
+        display: none;
+      }
+    }
+  }
+  .dishes__slider-min-item img {
+    width: 130px;
+    height: 113px;
+  } 
+  .dishes__slider-min .slick-list {
+    width: 131px;
+  }
+}
+
+@media(max-width: 420px){
+  .value{
+    &__history-text-numbers{
+      flex-direction: column;
+    }
+  }
+  .offer{
+   &__title{
+     padding: 80px 87px 0;
+     font-size: 30px;
+     line-height: 34px;
+     text-align: center;
+    }
+    &__subtitle{
+     text-align: center;
+   }
+  }
+}
