@@ -54,6 +54,21 @@
   .dishes__slider-big .slick-list {
     width: 100%;
   }
+  .our-menu{
+    &__item{
+      margin-right: 10px;
+    }
+  }
+  .reviews{
+    .reviews-slider{
+      width: 100%;
+    }
+  }
+  .gallery{
+    &__content{
+      justify-content: center;
+    }
+  }
 }
 
 
@@ -78,6 +93,27 @@
     }
     &__item + .value__item{
       margin-left: 0;
+    }
+  }
+}
+@media(max-width: 730px){
+  .our-menu{
+    &__inner{
+      padding: 20px 0 106px ;
+    }
+    &__item{
+      margin: 0 auto;
+    }
+    &__item + .our-menu__item{
+      display: none;
+    }
+  }
+  .footer-bg{
+    max-width: 730px;
+    background-size:  contain;
+    height: 100vh;
+    &__img{
+      object-fit: cover;
     }
   }
 }
@@ -143,8 +179,17 @@
   .dishes__slider-min .slick-list {
     width: 131px;
   }
+  .our-cooks{
+    &__img{
+      margin: 0 auto;
+    }
+  }
 }
-
+@media(max-width: 500px){
+  .dishes__slider-big img{
+    height: 100%;
+  }
+}
 @media(max-width: 420px){
   .value{
     &__history-text-numbers{
@@ -153,7 +198,7 @@
   }
   .offer{
    &__title{
-     padding: 80px 87px 0;
+     padding: 80px 55px 0;
      font-size: 30px;
      line-height: 34px;
      text-align: center;

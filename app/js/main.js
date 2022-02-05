@@ -9,7 +9,19 @@ $(function(){
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
-    arrows: false
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          vertical: true,
+          dots: false,
+          
+        }
+      }
+    ]
   });
 
   $('.reviews-slider').slick({
